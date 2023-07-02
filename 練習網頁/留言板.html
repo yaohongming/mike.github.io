@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>留言版</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+    .message-form {
+      background-image: url(圖片.jpg);
+      width: 600px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding-top: 5px;
+      padding-bottom: 25px;
+      padding-left: 40px;
+      padding-right: 10px;
+
+    }
+    .message-form .form-title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      margin-top: 30px;
+      color: yellow;
+    }
+    .message-form label {
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 5px;
+    }
+
+    .message-form input[type="text"],
+    .message-form textarea {
+      width: auto;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .message-form select {
+      width: auto;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+
+    }
+    .message-form .submit-button {
+      display: block;
+      width: auto;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+  <form class="message-form">
+    <div class="form-title">留言板</div> 
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name">
+
+    <label for="gender">性别：</label>
+    <select id="gender" name="gender">
+      <option value="male">男</option>
+      <option value="female">女</option>
+    </select>
+
+    <label for="birthdate">出生年月日：</label>
+    <input type="date" id="birthdate" name="birthdate">
+
+    <label for="message">留言内容：</label>
+    <textarea id="message" name="message" rows="6" style="width: 500px;"></textarea>
+
+    <input type="submit" class="submit-button" value="提交">
+  </form>  
+</body>
+</html>
